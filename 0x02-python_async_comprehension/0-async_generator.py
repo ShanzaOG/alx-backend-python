@@ -7,7 +7,11 @@ from typing import Generator
 
 async def async_generator() -> Generator[float, None, None]:
     """
-    An asynchronous generator that yeilds random numbers 10 times with 1 sec delay
+    async_generator - function to loop 10 times
+    Arguments:
+        no arguments
+    Returns:
+        nothing
     """
     for i in range(10):
         await asyncio.sleep(1)
